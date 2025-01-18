@@ -118,3 +118,144 @@ h1 {
 .task-item .delete-btn:hover {
   background-color: #cc0000;
 }
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffde6;
+  padding: 15px;
+  margin: 15px 0;
+  border: 3px solid #ffcc00;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.task-item span {
+  flex: 1;
+  font-weight: bold;
+  color: #ff6600;
+  font-size: 18px;
+  word-break: break-word;
+  text-shadow: 1px 1px 2px #ffcc00;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-item button {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #333;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task-item .complete-btn {
+  background-color: #66cc66;
+  color: white;
+}
+
+.task-item .complete-btn:hover {
+  background-color: #4da64d;
+  transform: scale(1.1);
+}
+
+.task-item .delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.task-item .delete-btn:hover {
+  background-color: #cc0000;
+  transform: scale(1.1);
+}
+
+.task-item .complete-btn,
+.task-item .delete-btn {
+  padding: 8px 16px;
+  margin-left: 8px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffde6;
+  padding: 15px;
+  margin: 15px 0;
+  border: 3px solid #ffcc00;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.task:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.task span {
+  flex: 1;
+  font-weight: bold;
+  color: #ff6600;
+  font-size: 18px;
+  word-break: break-word;
+  text-shadow: 1px 1px 2px #ffcc00;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task button {
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #333;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.task .complete-btn {
+  background-color: #66cc66;
+  color: white;
+}
+
+.task .complete-btn:hover {
+  background-color: #4da64d;
+  transform: scale(1.1);
+}
+
+.task .delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.task .delete-btn:hover {
+  background-color: #cc0000;
+  transform: scale(1.1);
+}
